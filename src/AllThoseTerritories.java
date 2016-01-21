@@ -3,6 +3,7 @@
  */
 
 import java.awt.*;
+import java.util.LinkedList;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.TreeMap;
@@ -21,10 +22,10 @@ public class AllThoseTerritories extends JFrame{
     }
 
     private void initWorldMap() {
-
         Map<String, Territory> TerrMap = new TreeMap<>();
+        LinkedList<Continent> ContList = new LinkedList<>();
+        LinkedList<Field> Places = new LinkedList<>();
         //Karte einlesen von .map Datei
-
         Scanner uinput = new Scanner(System.in);
         String currentline = uinput.nextLine();
 
@@ -57,29 +58,21 @@ public class AllThoseTerritories extends JFrame{
                             yPoly[i / 2] = Integer.parseInt(line[i + temp]);
                     }
 
-                    /*
-                    System.out.println(TerrName);       //debugging stuff
-
-                    for (int i : xPoly) {
-                        System.out.print(i + " ");
-                    }
-                    System.out.println();
-                    for (int i : yPoly) {
-                        System.out.print(i + " ");
-                    }
-                    */
+                    Field current = new Field(TerrName, new Polygon(xPoly, yPoly, xPoly.length));
+                    Places.add(current);
 
                     if (!TerrMap.containsKey(TerrName)) {
-                        System.out.println("CREATING NEW STUFF");
+                        //System.out.println("CREATING NEW STUFF");
                         //create new Territory and add it to the World Map
                         Territory terr = new Territory(TerrName);
-                        terr.addField(new Polygon(xPoly, yPoly, xPoly.length));
+                        terr.addField(current);
                         TerrMap.put(TerrName, terr);
                     } else {
-                        TerrMap.get(TerrName).addField(new Polygon(xPoly, yPoly, xPoly.length));
+                        TerrMap.get(TerrName).addField(current);
                     }
 
                     break;
+
                 case "capital-of":
                     for (int i = 1; i < temp; i++) {
                         if (!Character.isDigit(line[i].charAt(0))) {
@@ -88,30 +81,78 @@ public class AllThoseTerritories extends JFrame{
                             temp = i;
                         }
                     }
-                    Point p = new Point(Integer.parseInt(line[temp]), Integer.parseInt(line [temp+1]));
-                    TerrMap.get(TerrName).setCapital(p);
+                    TerrMap.get(TerrName).setCapital(Integer.parseInt(line[temp]), Integer.parseInt(line [temp+1]));
                     break;
                 case "neighbors-of":
                     //TODO
+                    for (int i = 1; i < temp; i++) {
+                        if (!line[i].equals(":")) {
+                            TerrName += " " + line[i];
+                        } else {
+                            temp = i;
+                        }
+                    }
+                    //System.out.println(TerrName);
+                    Territory terr = TerrMap.get(TerrName);
+
+                    temp++;
+
+                    while(temp < line.length) {
+                        String Neighbor = "";
+                        while(temp < line.length && !line[temp].equals("-")){
+                            Neighbor += " " + line[temp];
+                            temp++;
+                        }
+                        //System.out.println(Neighbor);
+                        terr.addNeighbor(TerrMap.get(Neighbor));
+                        temp++;
+                    }
+
                     break;
                 case "continent":
-                    //TODO
+                    for (int i = 1; i < temp; i++) {
+                        if (!Character.isDigit(line[i].charAt(0))) {
+                            TerrName += " " + line[i];
+                        } else {
+                            temp = i;
+                        }
+                    }
+                        Continent tempCont = new Continent(TerrName, Integer.parseInt(line[temp]));
+
+                        temp += 2;
+
+                        while(temp < line.length) {
+                            String Country = "";
+                            while(temp < line.length && !line[temp].equals("-")){
+                                Country += " " + line[temp];
+                                temp++;
+                            }
+
+                            tempCont.addCountries(TerrMap.get(Country));
+                            temp++;
+                        }
+                        ContList.add(tempCont);
+                        System.out.println(tempCont);
+
                     break;
+
                 default:
+                    System.out.println("Invalid Map.");
                     break;
             }
             currentline = uinput.nextLine();
         }
-
-        this.add(new Panel(TerrMap));
+        System.out.println("World Map created. Loading Window...");
+        this.add(new Panel(TerrMap, Places));
+        //Überlegung: jedes Territorium als JFrame darzustellen?
+        //Dann waer jedes voneinander unabhängig ansprechbar wegen click/farbe usw.
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(new Runnable(){
+        EventQueue.invokeLater(new Runnable(){
             public void run() {
                 new AllThoseTerritories();
             }
         });
     }
-
 }
