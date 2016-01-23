@@ -1,46 +1,46 @@
-/**
- * Created by Baufritz on 06.01.2016.
- *
- * Class AllThoseTerritories
- *
- * Resembles a game of Risk against an AI player.
- *
- */
-
 import java.awt.*;
 import java.io.File;
-import java.net.URL;
 import java.util.LinkedList;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.TreeMap;
-import javax.swing.*;
 
-public class AllThoseTerritories extends JFrame{
+/**
+ * Created by Baufritz on 23.01.2016.
+ *
+ * Class MapParser
+ * Converts Map from strings to Continents, Territories and Fields
+ *
+ * <- gets File containing Map from Game
+ *
+ *
+ */
 
-    public AllThoseTerritories(){
-        this.setSize(1250, 650);
-        this.setResizable(false);
-        this.setTitle("All those Territories");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        initWorldMap();
-        this.setVisible(true);
-    }
+public class MapParser{
 
-    //TODO: Create new MapParser and put all of this mess in there
-    private void initWorldMap() {
+    //TODO: Write Strings for regex matching
+    public static final String PATCH_OF = "";
+    public static final String CAPITAL_OF = "";
+    public static final String NEIGHBORS_OF = "";
+    public static final String CONTINENT = "";
+
+    private Map<String, Territory> territories;
+    private LinkedList<Continent> continents;
+    private LinkedList<Field> fields;
+
+    public MapParser(File stringmap){
         Map<String, Territory> TerrMap = new TreeMap<>();
         LinkedList<Continent> ContList = new LinkedList<>();
         LinkedList<Field> Places = new LinkedList<>();
-        //Karte einlesen von .map Datei
 
+        initWorldMap(stringmap);
+    }
+
+    //Reads map data from File and files it into Continents, Territories, and Fields.
+    private void initWorldMap(File stringmap) {
         Scanner uinput = null;
-        URL url = AllThoseTerritories.class.getResource("world.map");
-        File inputMap = null;
-
         try {
-            inputMap = new File(url.toURI());
-            uinput = new Scanner(inputMap);
+            uinput = new Scanner(stringmap);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -76,17 +76,17 @@ public class AllThoseTerritories extends JFrame{
                     }
 
                     Field current = new Field(TerrName, new Polygon(xPoly, yPoly, xPoly.length));
-                    Places.add(current);
+                    fields.add(current);
 
                     //If Territory specified doesn't exist, create new Territory and add it to the World Map
-                    if (!TerrMap.containsKey(TerrName)) {
+                    if (!territories.containsKey(TerrName)) {
                         Territory terr = new Territory(TerrName);
                         terr.addField(current);
-                        TerrMap.put(TerrName, terr);
+                        territories.put(TerrName, terr);
                     }
                     //else just add Field to the Territory
                     else {
-                        TerrMap.get(TerrName).addField(current);
+                        territories.get(TerrName).addField(current);
                     }
 
                     break;
@@ -99,7 +99,7 @@ public class AllThoseTerritories extends JFrame{
                             temp = i;
                         }
                     }
-                    TerrMap.get(TerrName).setCapital(Integer.parseInt(line[temp]), Integer.parseInt(line [temp+1]));
+                    territories.get(TerrName).setCapital(Integer.parseInt(line[temp]), Integer.parseInt(line [temp+1]));
                     break;
 
                 case "neighbors-of":
@@ -112,7 +112,7 @@ public class AllThoseTerritories extends JFrame{
                         }
                     }
                     //System.out.println(TerrName);
-                    Territory terr = TerrMap.get(TerrName);
+                    Territory terr = territories.get(TerrName);
 
                     temp++;
 
@@ -123,7 +123,7 @@ public class AllThoseTerritories extends JFrame{
                             temp++;
                         }
                         //System.out.println(Neighbor);
-                        terr.addNeighbor(TerrMap.get(Neighbor));
+                        terr.addNeighbor(territories.get(Neighbor));
                         temp++;
                     }
 
@@ -136,22 +136,22 @@ public class AllThoseTerritories extends JFrame{
                             temp = i;
                         }
                     }
-                        Continent tempCont = new Continent(TerrName, Integer.parseInt(line[temp]));
+                    Continent tempCont = new Continent(TerrName, Integer.parseInt(line[temp]));
 
-                        temp += 2;
+                    temp += 2;
 
-                        while(temp < line.length) {
-                            String Country = "";
-                            while(temp < line.length && !line[temp].equals("-")){
-                                Country += " " + line[temp];
-                                temp++;
-                            }
-
-                            tempCont.addCountries(TerrMap.get(Country));
+                    while(temp < line.length) {
+                        String Country = "";
+                        while(temp < line.length && !line[temp].equals("-")){
+                            Country += " " + line[temp];
                             temp++;
                         }
-                        ContList.add(tempCont);
-                        System.out.println(tempCont);
+
+                        tempCont.addCountries(territories.get(Country));
+                        temp++;
+                    }
+                    continents.add(tempCont);
+                    System.out.println(tempCont);
 
                     break;
 
@@ -161,15 +161,21 @@ public class AllThoseTerritories extends JFrame{
             }
             currentline = uinput.nextLine();
         }
-        System.out.println("World Map created. Loading Window...");
-        this.add(new Panel(TerrMap, Places));
     }
 
-    public static void main(String[] args) {
-        EventQueue.invokeLater(new Runnable(){
-            public void run() {
-                new AllThoseTerritories();
-            }
-        });
+    //returns list of Continents with associated Territories
+    public LinkedList<Continent> getContinents(){
+        return continents;
     }
+
+    //returns map of Territories for quick access
+    public Map<String, Territory> getTerritories(){
+        return territories;
+    }
+
+    //returns all fields
+    public LinkedList<Field> getFields(){
+        return fields;
+    }
+
 }

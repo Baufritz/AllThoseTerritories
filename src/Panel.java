@@ -12,13 +12,10 @@ public class Panel extends JPanel implements MouseListener, MouseMotionListener 
     Map<String, Territory> TerrMap;
     LinkedList<Field> Places;
 
-    Point ref;
-
     public Panel( Map<String, Territory> init_TerrMap, LinkedList<Field> init_Places) {
         this.TerrMap = init_TerrMap;
         this.Places = init_Places;
-        this.setBackground(Color.blue);
-        //TODO: FIND RIGHT COLOR DAMNIT
+        this.setBackground(Color.blue); //TODO: Find colors that don't make your eyes bleed
         addMouseListener(this);
         addMouseMotionListener(this);
     }
@@ -41,7 +38,7 @@ public class Panel extends JPanel implements MouseListener, MouseMotionListener 
                 g.fillPolygon(tempField.getBorder());                                           //Fills the polygon
             }
             g.setColor(Color.green);
-            g.drawString("X",terr.getValue().getCapitalX(), terr.getValue().getCapitalY()); //TODO: display troops
+            g.drawString(Integer.toString(terr.getValue().Army()),terr.getValue().getCapitalX(), terr.getValue().getCapitalY()); //Display troops in capital
 
         }
 

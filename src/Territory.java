@@ -12,30 +12,14 @@ public class Territory {
     static final Color AI = Color.red;
     static final Color ACTIVE = Color.yellow;
 
-    /*
-    private class Capital{
-        private int x;
-        private int y;
-
-        public Capital(int x, int y){
-            this.x = x;
-            this.y = y;
-        }
-
-        public int getX(){return x;}
-        public int getY(){return y;}
-
-    }
-    */
-
     private String name;                            //Name of Territoy
-    private LinkedList<Field> Fields;             //Land for drawing
-    private Map<String, Territory> Neighbors;       //Neighbors of Territory  TODO: LinkedList oder Map? Je nachdem wies besser is
+    private LinkedList<Field> Fields;               //Land for drawing
+    private Map<String, Territory> Neighbors;       //Neighbors of Territory
     private int capX;                               //Capital of Territory, where to display Troops
     private int capY;                               //Capital of Territory, where to display Troops
     private int troops;                             //Amount of troops currently in this Territory
-    private boolean active;
-    private Color currentColor;
+    private boolean active;                         //is this Territory currently active?
+    private Color currentColor;                     //current color for drawing in Panel
     private int belongsTo;                          //0: neutral; 1: Player; 2: AI
 
     //Constructor requires name of Territory
