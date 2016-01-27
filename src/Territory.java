@@ -3,31 +3,39 @@ import java.util.LinkedList;
 import java.util.Map;
 import java.util.TreeMap;
 
+
+
 /**
  * Created by Baufritz on 06.01.2016.
+ *
+ * Territory Class
+ *
+ * Represents a territory on the map.
+ *
  */
 public class Territory {
 
-    static final Color PLAYER = Color.green;
-    static final Color AI = Color.red;
-    static final Color ACTIVE = Color.yellow;
+    //Color constants for player, AI, and selected countries
+    private static final Color[] PLAYERCOLORS = {Color.gray, Color.green, Color.red};
+    private static final Color ACTIVE = Color.yellow;
 
-    private String name;                            //Name of Territoy
-    private LinkedList<Field> Fields;               //Land for drawing
-    private Map<String, Territory> Neighbors;       //Neighbors of Territory
-    private int capX;                               //Capital of Territory, where to display Troops
-    private int capY;                               //Capital of Territory, where to display Troops
+    //TODO: if any variables are added, add them to equals() as well
+    private String name;                            //Name of Territory
+    private LinkedList<Field> fields;               //Land for drawing
+    private Map<String, Territory> neighbors;       //Neighbors of Territory
+    private int belongsTo;                          //0: neutral; 1: Player; 2: Player2/AI
+    private int capX;                               //X coordinate of capital of Territory, where to display Troops
+    private int capY;                               //Y coordinate of capital of Territory, where to display Troops
     private int troops;                             //Amount of troops currently in this Territory
     private boolean active;                         //is this Territory currently active?
     private Color currentColor;                     //current color for drawing in Panel
-    private int belongsTo;                          //0: neutral; 1: Player; 2: AI
 
     //Constructor requires name of Territory
     //everything else is set with functions
     public Territory(String init_name){
         name = init_name;
-        Fields = new LinkedList<Field>();
-        Neighbors = new TreeMap<String, Territory>();
+        fields = new LinkedList<Field>();
+        neighbors = new TreeMap<String, Territory>();
         troops = 0;
         active = false;
         currentColor = Color.gray;
@@ -38,9 +46,7 @@ public class Territory {
         active = !active;
         if(active) this.currentColor = ACTIVE;
         else {
-            if(belongsTo == 0) currentColor = Color.gray;
-            if(belongsTo == 1) currentColor = PLAYER;
-            if(belongsTo == 2) currentColor = AI;
+            currentColor = PLAYERCOLORS[belongsTo];
         }
     }
 
@@ -64,7 +70,18 @@ public class Territory {
         this.capY = y;
     }
 
-    //returns capital of territory
+    //sets Owner of territory
+    public void setOwner(int owner){
+        belongsTo = owner;
+        currentColor = PLAYERCOLORS[belongsTo];
+    }
+
+    //returns Owner from Territory
+    public int getOwner(){
+        return belongsTo;
+    }
+
+    //return capital x and y coordinates of territory
     public int getCapitalX(){
         return capX;
     }
@@ -74,16 +91,16 @@ public class Territory {
 
     //adds new neighbor to attack/move troops to
     public void addNeighbor(Territory neighbor){
-        Neighbors.put(neighbor.getName(), neighbor);
+        neighbors.put(neighbor.getName(), neighbor);
     }
 
     public Map<String, Territory> getNeighbors(){
-        return Neighbors;
+        return neighbors;
     }
 
     //adds new land to the territory
     public void addField(Field field){
-        Fields.add(field);
+        fields.add(field);
     }
 
     //returns name of Territory
@@ -93,17 +110,45 @@ public class Territory {
 
     //returns all polygons of territory for drawing
     public LinkedList<Field> getFields(){
-        return Fields;
+        return fields;
     }
 
     @Override
+    //returns String with territory name, current troop count and attack options
     public String toString(){
-        return this.getName() + ": Currently " + troops + " troops.";
+        String territory = this.getName() + ": " + troops + " troops. Attack options:";
+        for(Map.Entry<String, Territory> terr: neighbors.entrySet()){
+            territory += terr.getKey() + ",";
+        }
+        territory = territory.substring(1,territory.length()-1);        //just for formatting, comment out if you don't mind a colon at the end
+        return territory;
+    }
+
+    @Override
+    //basically compares every public variable form the two objects
+    public boolean equals(Object other) {
+        if (this == other) {
+            return true;
+        }
+        if (other == null || ! this.getClass().equals(other.getClass())) {
+            return false;
+        }
+        Territory that = (Territory) other;
+
+        if(!that.name.equals(this.name)) return false;
+        if(that.belongsTo != this.belongsTo) return false;
+        if(that.capX != this.capX)return false;
+        if(that.capY != this.capY)return false;
+        if(that.troops != this.troops)return false;
+        if(!that.fields.equals(this.fields))return false;
+        if(!that.neighbors.equals(this.neighbors))return false;
+        if(!that.currentColor.equals(this.color()))return false;
+
+        return true;
     }
 
     public Color color(){
         return currentColor;
     }
-
 }
 

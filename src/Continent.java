@@ -2,6 +2,13 @@ import java.util.LinkedList;
 
 /**
  * Created by Baufritz on 06.01.2016.
+ *
+ * Class Continent
+ *
+ * Groups territories together.
+ * If a player owns all territories in a continent,
+ * he gets bonus reinforcements.
+ *
  */
 public class Continent {
     int bonusTroops;
@@ -12,12 +19,21 @@ public class Continent {
         this.bonusTroops = troops;
         this.countries = new LinkedList<>();
     }
-    public void addCountries(Territory toAdd){
+    public void addCountry(Territory toAdd){
         countries.add(toAdd);
     }
 
-    //TODO: belongstoPlayer
-    //TODO: getreinforcements
+    //checks if all Territories belong to the same player
+    //if yes, returns amount of bonus troops specified in constructor
+    //if no, returns 0;
+    public int getBonusTroops(){
+        int player = countries.getFirst().getOwner();
+        for(Territory country: countries){
+            if(country.getOwner() != player) return 0;
+        }
+        return bonusTroops;
+    }
+
 
     @Override
     public String toString(){
