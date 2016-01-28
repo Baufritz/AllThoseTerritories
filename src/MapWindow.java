@@ -2,7 +2,7 @@
  * Created by Baufritz on 06.01.2016.
  *
  * MapWindow Class
- * Draws main Map and handles Interactions with Game
+ * Draws main Map and handles interactions with Game
  *
  * <- gets MapParser from AllThoseTerritories
  * -> calls Game with parsedMap and itself as parameter
@@ -148,10 +148,11 @@ public class MapWindow extends JPanel implements MouseListener, MouseMotionListe
     public void mouseClicked(MouseEvent me) {
         for(Field place: Places){
             if(place.getBorder().contains(me.getPoint())){
-                currentGame.clickEvent(place.belongsTo());
+                currentGame.clickEvent(place.belongsTo(), me);
             }
         }
         this.repaint();
+
     }
 
     //currently does nothing

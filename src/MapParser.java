@@ -42,18 +42,20 @@ public class MapParser{
     //File has to be a text file
     private void parseWorldMap(File stringmap) {
 
+        boolean isnotnull = true;
+
         Scanner uinput = null;
         String currentline = "";
         try {
             uinput = new Scanner(stringmap);
-            currentline = uinput.nextLine();
+            //currentline = uinput.nextLine();
         } catch (Exception e) {
             e.printStackTrace();
             System.exit(2);
         }
 
-        while (uinput.hasNext() && !currentline.equals("")) {
-
+        while(isnotnull){
+            currentline = uinput.nextLine();
             if(currentline.matches(PATCH_OF)) {
                 parsePatch(currentline);
             }
@@ -70,8 +72,11 @@ public class MapParser{
                 System.out.println("Invalid Line: \"" + currentline + "\"");
                 System.exit(1);
             }
-            currentline = uinput.nextLine();
+            //if(!uinput.hasNext()) isnotnull = false;
+            isnotnull = uinput.hasNext();
+
         }
+
     }
 
     //gets patch information from String and adds Patch to Territory
@@ -202,7 +207,7 @@ public class MapParser{
             temp++;
         }
         continents.add(tempCont);
-
+        System.out.println(TerrName);
     }
 
     //returns LinkedList of Continents with associated Territories

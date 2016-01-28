@@ -23,7 +23,7 @@ public class Territory {
     private String name;                            //Name of Territory
     private LinkedList<Field> fields;               //Land for drawing
     private Map<String, Territory> neighbors;       //Neighbors of Territory
-    private int belongsTo;                          //0: neutral; 1: Player; 2: Player2/AI
+    private int belongsTo;                          //0: neutral; 1: Player; 2: AI
     private int capX;                               //X coordinate of capital of Territory, where to display Troops
     private int capY;                               //Y coordinate of capital of Territory, where to display Troops
     private int troops;                             //Amount of troops currently in this Territory
@@ -116,7 +116,7 @@ public class Territory {
     @Override
     //returns String with territory name, current troop count and attack options
     public String toString(){
-        String territory = this.getName() + ": " + troops + " troops. Attack options:";
+        String territory = this.getName() + ": " + troops + " troops. Neighbors:";
         for(Map.Entry<String, Territory> terr: neighbors.entrySet()){
             territory += terr.getKey() + ",";
         }
@@ -145,6 +145,13 @@ public class Territory {
         if(!that.currentColor.equals(this.color()))return false;
 
         return true;
+    }
+
+    public boolean existsOpponent(){
+        for(Map.Entry<String, Territory> Entry: neighbors.entrySet()){
+            if(Entry.getValue().getOwner() != belongsTo) return true;
+        }
+        return false;
     }
 
     public Color color(){

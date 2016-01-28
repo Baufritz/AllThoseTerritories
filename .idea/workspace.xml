@@ -2,36 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4449307-7081-4e5c-9170-ae318a1ca112" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Abschlussbeispiel/01-squares-initial.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Abschlussbeispiel/02-world-claim.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Abschlussbeispiel/03-world-reinforce.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Abschlussbeispiel/04-world-attack.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Abschlussbeispiel/05-world-move.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Abschlussbeispiel/abschlussbeispiel-ws-2015.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Abschlussbeispiel/pk15w18p_FirstStepsGUI.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Abschlussbeispiel/pk15w18p_FirstStepsGUI/01-jpanel/Main.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Abschlussbeispiel/pk15w18p_FirstStepsGUI/01-jpanel/Window.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Abschlussbeispiel/pk15w18p_FirstStepsGUI/02-mouse-events/Listener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Abschlussbeispiel/pk15w18p_FirstStepsGUI/02-mouse-events/Main.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Abschlussbeispiel/pk15w18p_FirstStepsGUI/02-mouse-events/MotionListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Abschlussbeispiel/pk15w18p_FirstStepsGUI/02-mouse-events/Window.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Abschlussbeispiel/pk15w18p_FirstStepsGUI/03-events-in-panel/Main.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Abschlussbeispiel/pk15w18p_FirstStepsGUI/03-events-in-panel/Panel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Abschlussbeispiel/pk15w18p_FirstStepsGUI/03-events-in-panel/Window.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Abschlussbeispiel/pk15w18p_FirstStepsGUI/04-drag-rectangles/Main.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Abschlussbeispiel/pk15w18p_FirstStepsGUI/04-drag-rectangles/Panel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Abschlussbeispiel/pk15w18p_FirstStepsGUI/04-drag-rectangles/Window.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Abschlussbeispiel/pk15w18p_FirstStepsGUI/05-wrapup/Main.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Abschlussbeispiel/pk15w18p_FirstStepsGUI/05-wrapup/Panel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/exportToHTML/AllThoseTerritories.java.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AllThoseTerritories.java" afterPath="$PROJECT_DIR$/src/AllThoseTerritories.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Continent.java" afterPath="$PROJECT_DIR$/src/Continent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Field.java" afterPath="$PROJECT_DIR$/src/Field.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Game.java" afterPath="$PROJECT_DIR$/src/Game.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MapParser.java" afterPath="$PROJECT_DIR$/src/MapParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MapWindow.java" afterPath="$PROJECT_DIR$/src/MapWindow.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Territory.java" afterPath="$PROJECT_DIR$/src/Territory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Panel.java" afterPath="$PROJECT_DIR$/src/MapWindow.java" />
     </list>
     <ignored path="AllThoseTerritories.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/src/AllThoseTerritories.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -76,16 +52,16 @@
         <entry file="file://$PROJECT_DIR$/src/MapParser.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+              <caret line="74" column="12" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#MapParser#0;class#MapParser#0" expanded="false" />
-                <element signature="method#parseWorldMap#0;class#MapParser#0" expanded="false" />
-                <element signature="method#parsePatch#0;class#MapParser#0" expanded="false" />
-                <element signature="method#parseCapital#0;class#MapParser#0" expanded="false" />
-                <element signature="method#parseNeighbors#0;class#MapParser#0" expanded="false" />
-                <element signature="method#parseContinent#0;class#MapParser#0" expanded="false" />
-                <element signature="method#main#0;class#MapParser#0" expanded="false" />
+                <element signature="e#7249#7250#0" expanded="true" />
+                <element signature="e#7282#7283#0" expanded="true" />
+                <element signature="e#7398#7399#0" expanded="true" />
+                <element signature="e#7432#7433#0" expanded="true" />
+                <element signature="e#7517#7518#0" expanded="true" />
+                <element signature="e#7546#7547#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -95,10 +71,9 @@
         <entry file="file://$PROJECT_DIR$/src/MapWindow.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="119" column="62" selection-start-line="119" selection-start-column="62" selection-end-line="119" selection-end-column="62" />
+              <caret line="150" column="60" selection-start-line="150" selection-start-column="60" selection-end-line="150" selection-end-column="60" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <element signature="method#MapWindow#0;class#MapWindow#0" expanded="false" />
                 <element signature="method#paintComponent#0;class#MapWindow#0" expanded="false" />
                 <element signature="method#paintLines#0;class#MapWindow#0" expanded="false" />
                 <element signature="method#updateMap#1;class#MapWindow#0" expanded="false" />
@@ -106,9 +81,18 @@
                 <element signature="method#mouseExited#0;class#MapWindow#0" expanded="false" />
                 <element signature="method#mouseEntered#0;class#MapWindow#0" expanded="false" />
                 <element signature="method#mouseReleased#0;class#MapWindow#0" expanded="false" />
-                <element signature="method#mouseClicked#0;class#MapWindow#0" expanded="false" />
                 <element signature="method#mouseMoved#0;class#MapWindow#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="world.map" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/world.map">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="171" column="0" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -116,12 +100,16 @@
       <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.83360523">
-              <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.9184">
+              <caret line="125" column="53" selection-start-line="125" selection-start-column="53" selection-end-line="125" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#moveTroops#0;class#Game#0" expanded="false" />
+                <element signature="method#attack#0;class#Game#0" expanded="false" />
+                <element signature="method#calculateReinforcements#0;class#Game#0" expanded="false" />
                 <element signature="method#acquire#0;class#Game#0" expanded="false" />
-                <element signature="method#allClaimed#0;class#Game#0" expanded="false" />
+                <element signature="method#getRandomTerritory#0;class#Game#0" expanded="false" />
+                <element signature="method#GameOver#0;class#Game#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -131,13 +119,15 @@
         <entry file="file://$PROJECT_DIR$/src/Territory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="125" column="0" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+              <caret line="154" column="5" selection-start-line="154" selection-start-column="5" selection-end-line="154" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#Territory#0;class#Territory#0" expanded="false" />
                 <element signature="method#toggleActive#0;class#Territory#0" expanded="false" />
                 <element signature="method#setCapital#0;class#Territory#0" expanded="false" />
                 <element signature="method#setOwner#0;class#Territory#0" expanded="false" />
                 <element signature="method#equals#0;class#Territory#0" expanded="false" />
+                <element signature="method#existsOpponent#0;class#Territory#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -147,11 +137,8 @@
         <entry file="file://$PROJECT_DIR$/src/Continent.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-              <folding>
-                <element signature="e#523#524#0" expanded="false" />
-                <element signature="e#559#560#0" expanded="false" />
-              </folding>
+              <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -196,18 +183,21 @@
         <option value="$PROJECT_DIR$/src/Parser.java" />
         <option value="$PROJECT_DIR$/src/Panel.java" />
         <option value="$PROJECT_DIR$/src/Field.java" />
-        <option value="$PROJECT_DIR$/src/MapParser.java" />
-        <option value="$PROJECT_DIR$/src/Continent.java" />
-        <option value="$PROJECT_DIR$/src/Territory.java" />
-        <option value="$PROJECT_DIR$/src/MapWindow.java" />
         <option value="$PROJECT_DIR$/src/AllThoseTerritories.java" />
+        <option value="$PROJECT_DIR$/src/Continent.java" />
+        <option value="$PROJECT_DIR$/src/world.map" />
+        <option value="$PROJECT_DIR$/src/MapParser.java" />
+        <option value="$PROJECT_DIR$/src/MapWindow.java" />
+        <option value="$PROJECT_DIR$/src/Territory.java" />
         <option value="$PROJECT_DIR$/src/Game.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="960" />
-    <option name="height" value="1040" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -234,41 +224,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AllThoseTerritories" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AllThoseTerritories" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AllThoseTerritories" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AllThoseTerritories" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AllThoseTerritories" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Problems">
           <PATH>
@@ -313,7 +269,41 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AllThoseTerritories" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AllThoseTerritories" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AllThoseTerritories" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AllThoseTerritories" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AllThoseTerritories" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -656,24 +646,30 @@
       <option name="project" value="LOCAL" />
       <updated>1453510514935</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Started working on Game phases.">
+      <created>1453909943941</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1453909943941</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="960" height="1040" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32760474" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3273495" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.311493" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31045407" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23622881" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.116145834" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -725,11 +721,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added clickable Territories." />
     <MESSAGE value="*Created Game class, MapParser class&#10;*Implemented reading maps from File&#10;&#10;This is mostly just a backup." />
-    <option name="LAST_COMMIT_MESSAGE" value="*Created Game class, MapParser class&#10;*Implemented reading maps from File&#10;&#10;This is mostly just a backup." />
+    <MESSAGE value="Started working on Game phases." />
+    <option name="LAST_COMMIT_MESSAGE" value="Started working on Game phases." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="18" />
+      <option name="time" value="23" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -755,10 +752,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-          <folding>
-            <element signature="e#523#524#0" expanded="false" />
-            <element signature="e#559#560#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -786,7 +780,6 @@
           <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="method#MapWindow#0;class#MapWindow#0" expanded="false" />
             <element signature="method#paintComponent#0;class#MapWindow#0" expanded="false" />
             <element signature="method#paintLines#0;class#MapWindow#0" expanded="false" />
             <element signature="method#updateMap#1;class#MapWindow#0" expanded="false" />
@@ -794,7 +787,6 @@
             <element signature="method#mouseExited#0;class#MapWindow#0" expanded="false" />
             <element signature="method#mouseEntered#0;class#MapWindow#0" expanded="false" />
             <element signature="method#mouseReleased#0;class#MapWindow#0" expanded="false" />
-            <element signature="method#mouseClicked#0;class#MapWindow#0" expanded="false" />
             <element signature="method#mouseMoved#0;class#MapWindow#0" expanded="false" />
           </folding>
         </state>
@@ -806,10 +798,12 @@
           <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Territory#0;class#Territory#0" expanded="false" />
             <element signature="method#toggleActive#0;class#Territory#0" expanded="false" />
             <element signature="method#setCapital#0;class#Territory#0" expanded="false" />
             <element signature="method#setOwner#0;class#Territory#0" expanded="false" />
             <element signature="method#equals#0;class#Territory#0" expanded="false" />
+            <element signature="method#existsOpponent#0;class#Territory#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -818,10 +812,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-          <folding>
-            <element signature="e#523#524#0" expanded="false" />
-            <element signature="e#559#560#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -849,7 +840,6 @@
           <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="method#MapWindow#0;class#MapWindow#0" expanded="false" />
             <element signature="method#paintComponent#0;class#MapWindow#0" expanded="false" />
             <element signature="method#paintLines#0;class#MapWindow#0" expanded="false" />
             <element signature="method#updateMap#1;class#MapWindow#0" expanded="false" />
@@ -857,7 +847,6 @@
             <element signature="method#mouseExited#0;class#MapWindow#0" expanded="false" />
             <element signature="method#mouseEntered#0;class#MapWindow#0" expanded="false" />
             <element signature="method#mouseReleased#0;class#MapWindow#0" expanded="false" />
-            <element signature="method#mouseClicked#0;class#MapWindow#0" expanded="false" />
             <element signature="method#mouseMoved#0;class#MapWindow#0" expanded="false" />
           </folding>
         </state>
@@ -869,10 +858,12 @@
           <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Territory#0;class#Territory#0" expanded="false" />
             <element signature="method#toggleActive#0;class#Territory#0" expanded="false" />
             <element signature="method#setCapital#0;class#Territory#0" expanded="false" />
             <element signature="method#setOwner#0;class#Territory#0" expanded="false" />
             <element signature="method#equals#0;class#Territory#0" expanded="false" />
+            <element signature="method#existsOpponent#0;class#Territory#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -881,10 +872,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-          <folding>
-            <element signature="e#523#524#0" expanded="false" />
-            <element signature="e#559#560#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -912,7 +900,6 @@
           <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="method#MapWindow#0;class#MapWindow#0" expanded="false" />
             <element signature="method#paintComponent#0;class#MapWindow#0" expanded="false" />
             <element signature="method#paintLines#0;class#MapWindow#0" expanded="false" />
             <element signature="method#updateMap#1;class#MapWindow#0" expanded="false" />
@@ -920,7 +907,6 @@
             <element signature="method#mouseExited#0;class#MapWindow#0" expanded="false" />
             <element signature="method#mouseEntered#0;class#MapWindow#0" expanded="false" />
             <element signature="method#mouseReleased#0;class#MapWindow#0" expanded="false" />
-            <element signature="method#mouseClicked#0;class#MapWindow#0" expanded="false" />
             <element signature="method#mouseMoved#0;class#MapWindow#0" expanded="false" />
           </folding>
         </state>
@@ -932,10 +918,12 @@
           <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Territory#0;class#Territory#0" expanded="false" />
             <element signature="method#toggleActive#0;class#Territory#0" expanded="false" />
             <element signature="method#setCapital#0;class#Territory#0" expanded="false" />
             <element signature="method#setOwner#0;class#Territory#0" expanded="false" />
             <element signature="method#equals#0;class#Territory#0" expanded="false" />
+            <element signature="method#existsOpponent#0;class#Territory#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -944,10 +932,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-          <folding>
-            <element signature="e#523#524#0" expanded="false" />
-            <element signature="e#559#560#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -975,7 +960,6 @@
           <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="method#MapWindow#0;class#MapWindow#0" expanded="false" />
             <element signature="method#paintComponent#0;class#MapWindow#0" expanded="false" />
             <element signature="method#paintLines#0;class#MapWindow#0" expanded="false" />
             <element signature="method#updateMap#1;class#MapWindow#0" expanded="false" />
@@ -983,7 +967,6 @@
             <element signature="method#mouseExited#0;class#MapWindow#0" expanded="false" />
             <element signature="method#mouseEntered#0;class#MapWindow#0" expanded="false" />
             <element signature="method#mouseReleased#0;class#MapWindow#0" expanded="false" />
-            <element signature="method#mouseClicked#0;class#MapWindow#0" expanded="false" />
             <element signature="method#mouseMoved#0;class#MapWindow#0" expanded="false" />
           </folding>
         </state>
@@ -995,10 +978,12 @@
           <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Territory#0;class#Territory#0" expanded="false" />
             <element signature="method#toggleActive#0;class#Territory#0" expanded="false" />
             <element signature="method#setCapital#0;class#Territory#0" expanded="false" />
             <element signature="method#setOwner#0;class#Territory#0" expanded="false" />
             <element signature="method#equals#0;class#Territory#0" expanded="false" />
+            <element signature="method#existsOpponent#0;class#Territory#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1007,10 +992,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-          <folding>
-            <element signature="e#523#524#0" expanded="false" />
-            <element signature="e#559#560#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1038,7 +1020,6 @@
           <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="method#MapWindow#0;class#MapWindow#0" expanded="false" />
             <element signature="method#paintComponent#0;class#MapWindow#0" expanded="false" />
             <element signature="method#paintLines#0;class#MapWindow#0" expanded="false" />
             <element signature="method#updateMap#1;class#MapWindow#0" expanded="false" />
@@ -1046,7 +1027,6 @@
             <element signature="method#mouseExited#0;class#MapWindow#0" expanded="false" />
             <element signature="method#mouseEntered#0;class#MapWindow#0" expanded="false" />
             <element signature="method#mouseReleased#0;class#MapWindow#0" expanded="false" />
-            <element signature="method#mouseClicked#0;class#MapWindow#0" expanded="false" />
             <element signature="method#mouseMoved#0;class#MapWindow#0" expanded="false" />
           </folding>
         </state>
@@ -1058,10 +1038,12 @@
           <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Territory#0;class#Territory#0" expanded="false" />
             <element signature="method#toggleActive#0;class#Territory#0" expanded="false" />
             <element signature="method#setCapital#0;class#Territory#0" expanded="false" />
             <element signature="method#setOwner#0;class#Territory#0" expanded="false" />
             <element signature="method#equals#0;class#Territory#0" expanded="false" />
+            <element signature="method#existsOpponent#0;class#Territory#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1070,10 +1052,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-          <folding>
-            <element signature="e#523#524#0" expanded="false" />
-            <element signature="e#559#560#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1101,7 +1080,6 @@
           <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="method#MapWindow#0;class#MapWindow#0" expanded="false" />
             <element signature="method#paintComponent#0;class#MapWindow#0" expanded="false" />
             <element signature="method#paintLines#0;class#MapWindow#0" expanded="false" />
             <element signature="method#updateMap#1;class#MapWindow#0" expanded="false" />
@@ -1109,7 +1087,6 @@
             <element signature="method#mouseExited#0;class#MapWindow#0" expanded="false" />
             <element signature="method#mouseEntered#0;class#MapWindow#0" expanded="false" />
             <element signature="method#mouseReleased#0;class#MapWindow#0" expanded="false" />
-            <element signature="method#mouseClicked#0;class#MapWindow#0" expanded="false" />
             <element signature="method#mouseMoved#0;class#MapWindow#0" expanded="false" />
           </folding>
         </state>
@@ -1121,10 +1098,12 @@
           <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Territory#0;class#Territory#0" expanded="false" />
             <element signature="method#toggleActive#0;class#Territory#0" expanded="false" />
             <element signature="method#setCapital#0;class#Territory#0" expanded="false" />
             <element signature="method#setOwner#0;class#Territory#0" expanded="false" />
             <element signature="method#equals#0;class#Territory#0" expanded="false" />
+            <element signature="method#existsOpponent#0;class#Territory#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1133,10 +1112,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-          <folding>
-            <element signature="e#523#524#0" expanded="false" />
-            <element signature="e#559#560#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1210,42 +1186,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/world.map">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.4324324">
-          <caret line="127" column="21" selection-start-line="127" selection-start-column="21" selection-end-line="127" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Army.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Territory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="125" column="0" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#toggleActive#0;class#Territory#0" expanded="false" />
-            <element signature="method#setCapital#0;class#Territory#0" expanded="false" />
-            <element signature="method#setOwner#0;class#Territory#0" expanded="false" />
-            <element signature="method#equals#0;class#Territory#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Continent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="e#523#524#0" expanded="false" />
-            <element signature="e#559#560#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1262,13 +1206,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Continent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AllThoseTerritories.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/world.map">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="171" column="0" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MapParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="74" column="12" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#MapParser#0;class#MapParser#0" expanded="false" />
+            <element signature="e#7249#7250#0" expanded="true" />
+            <element signature="e#7282#7283#0" expanded="true" />
+            <element signature="e#7398#7399#0" expanded="true" />
+            <element signature="e#7432#7433#0" expanded="true" />
+            <element signature="e#7517#7518#0" expanded="true" />
+            <element signature="e#7546#7547#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MapWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="119" column="62" selection-start-line="119" selection-start-column="62" selection-end-line="119" selection-end-column="62" />
+          <caret line="150" column="60" selection-start-line="150" selection-start-column="60" selection-end-line="150" selection-end-column="60" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="method#MapWindow#0;class#MapWindow#0" expanded="false" />
             <element signature="method#paintComponent#0;class#MapWindow#0" expanded="false" />
             <element signature="method#paintLines#0;class#MapWindow#0" expanded="false" />
             <element signature="method#updateMap#1;class#MapWindow#0" expanded="false" />
@@ -1276,48 +1263,39 @@
             <element signature="method#mouseExited#0;class#MapWindow#0" expanded="false" />
             <element signature="method#mouseEntered#0;class#MapWindow#0" expanded="false" />
             <element signature="method#mouseReleased#0;class#MapWindow#0" expanded="false" />
-            <element signature="method#mouseClicked#0;class#MapWindow#0" expanded="false" />
             <element signature="method#mouseMoved#0;class#MapWindow#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MapParser.java">
+    <entry file="file://$PROJECT_DIR$/src/Territory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <caret line="154" column="5" selection-start-line="154" selection-start-column="5" selection-end-line="154" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#MapParser#0;class#MapParser#0" expanded="false" />
-            <element signature="method#parseWorldMap#0;class#MapParser#0" expanded="false" />
-            <element signature="method#parsePatch#0;class#MapParser#0" expanded="false" />
-            <element signature="method#parseCapital#0;class#MapParser#0" expanded="false" />
-            <element signature="method#parseNeighbors#0;class#MapParser#0" expanded="false" />
-            <element signature="method#parseContinent#0;class#MapParser#0" expanded="false" />
-            <element signature="method#main#0;class#MapParser#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AllThoseTerritories.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
+            <element signature="method#Territory#0;class#Territory#0" expanded="false" />
+            <element signature="method#toggleActive#0;class#Territory#0" expanded="false" />
+            <element signature="method#setCapital#0;class#Territory#0" expanded="false" />
+            <element signature="method#setOwner#0;class#Territory#0" expanded="false" />
+            <element signature="method#equals#0;class#Territory#0" expanded="false" />
+            <element signature="method#existsOpponent#0;class#Territory#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.83360523">
-          <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.9184">
+          <caret line="125" column="53" selection-start-line="125" selection-start-column="53" selection-end-line="125" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#moveTroops#0;class#Game#0" expanded="false" />
+            <element signature="method#attack#0;class#Game#0" expanded="false" />
+            <element signature="method#calculateReinforcements#0;class#Game#0" expanded="false" />
             <element signature="method#acquire#0;class#Game#0" expanded="false" />
-            <element signature="method#allClaimed#0;class#Game#0" expanded="false" />
+            <element signature="method#getRandomTerritory#0;class#Game#0" expanded="false" />
+            <element signature="method#GameOver#0;class#Game#0" expanded="false" />
           </folding>
         </state>
       </provider>

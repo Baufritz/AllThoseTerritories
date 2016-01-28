@@ -26,14 +26,12 @@ public class Continent {
     //checks if all Territories belong to the same player
     //if yes, returns amount of bonus troops specified in constructor
     //if no, returns 0;
-    public int getBonusTroops(){
-        int player = countries.getFirst().getOwner();
+    public int getBonusTroops(int player){
         for(Territory country: countries){
             if(country.getOwner() != player) return 0;
         }
         return bonusTroops;
     }
-
 
     @Override
     public String toString(){
