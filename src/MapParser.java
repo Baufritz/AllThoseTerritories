@@ -1,5 +1,8 @@
+import jdk.internal.util.xml.impl.Input;
+
 import java.awt.*;
 import java.io.File;
+import java.io.InputStream;
 import java.net.URL;
 import java.util.LinkedList;
 import java.util.Map;
@@ -29,7 +32,7 @@ public class MapParser{
     private LinkedList<Field> fields;               //List of all fields
 
     //public constructor, initializes territories, continents and fields, then calls parseWorldMap(); to fill them
-    public MapParser(File stringmap){
+    public MapParser(InputStream stringmap){
         this.territories = new TreeMap<>();
         this.continents = new LinkedList<>();
         this.fields = new LinkedList<>();
@@ -40,7 +43,7 @@ public class MapParser{
     //Reads map data from File, checks if it it a valid map and files it into Continents, Territories, and Fields.
     //calls parsePatch(), parseCapital(), parseNeighbors() and parseContinents().
     //File has to be a text file
-    private void parseWorldMap(File stringmap) {
+    private void parseWorldMap(InputStream stringmap) {
 
         boolean isnotnull = true;
 
@@ -226,6 +229,7 @@ public class MapParser{
     }
 
     //See if a Map is valid, just for testing
+    /**
     public static void main(String[] args) {
 
         URL url = AllThoseTerritories.class.getResource("world.map");
@@ -261,5 +265,6 @@ public class MapParser{
         }
 
     }
+     **/
 
 }

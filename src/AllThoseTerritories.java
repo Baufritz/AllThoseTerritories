@@ -13,6 +13,7 @@
 
 import java.awt.*;
 import java.io.File;
+import java.io.InputStream;
 import java.net.URL;
 import javax.swing.*;
 
@@ -33,17 +34,15 @@ public class AllThoseTerritories extends JFrame{
     }
 
     //returns a file containing the map
-    public File getMap(){
-        URL url = AllThoseTerritories.class.getResource(map);
-        File inputMap = null;
-
+    private InputStream getMap(){
+        InputStream url = null;
         try {
-            inputMap = new File(url.toURI());
+            url = AllThoseTerritories.class.getResourceAsStream(map);
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-        return inputMap;
+        return url;
     }
 
     public static void main(String[] args) {
